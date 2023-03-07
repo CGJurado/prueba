@@ -1,0 +1,12 @@
+{
+  "app-login-toolbar-title": "Login",
+  "app-login-submitBtn": "Acceder",
+  "app-username-input-placeholder": "Email",
+  "app-username-input-error": "Email Invalido.",
+  "app-password-input-placeholder": "Contraseña",
+  "app-password-input-error": "La contraseña debe tener al menos 5 caracteres.",
+  "app-rememberMe-input-toggle": "Recordar",
+  "app-logout-button": "Cerrar sesión",
+  "app-filter-text-placeholder": "Buscar...",
+  "app-login-header-title": "Prueba técnica"
+}

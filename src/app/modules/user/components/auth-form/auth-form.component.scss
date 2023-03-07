@@ -1,0 +1,13 @@
+:host {
+  ion-item {
+    --ion-item-background: var(--deep-blue-color);
+    margin-bottom: 1em;
+    border-color: var(--placeholder-color);
+    ion-icon {
+      margin: 0 5px 5px 0;
+    }
+  }
+  ion-item.add-padding-end {
+    padding-right: 1em;
+  }
+}

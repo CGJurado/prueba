@@ -1,0 +1,20 @@
+:root {
+  // User Variables
+  
+  --deep-blue-color: rgb(21, 32, 46);
+  --background-img : url('../images/background.jpg');
+  --max-width: 600px;
+
+  // User styles
+  $tablet-breakpoint: 950px;
+
+  @media (min-width: $tablet-breakpoint) {
+    .responsive-container {
+      max-width: var(--max-width);
+      margin: 1em auto !important;
+    }
+    .responsive-font {
+      font-size: 20px !important;
+    }
+  }
+}

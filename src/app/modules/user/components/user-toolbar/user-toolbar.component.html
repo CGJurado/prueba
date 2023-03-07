@@ -1,0 +1,14 @@
+<ion-toolbar class="user-toolbar">
+  <ion-grid [fixed]="true">
+    <ion-row class="ion-align-items-center">
+      <ion-col class="ion-justify-content-start">
+        <p class="responsive-font">{{username}}</p>
+      </ion-col>
+      <ion-col size="auto" class="ion-justify-content-end">
+        <ion-button fill="clear" color="medium" (click)="logOut()" class="user-toolbar-button responsive-font">
+          <ion-icon slot="start" name="log-out"></ion-icon> <span>{{'app-logout-button' | translate | async}}</span>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-toolbar>

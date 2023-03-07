@@ -1,0 +1,16 @@
+:host {
+  ion-content {
+    --background: var(--background-img) 0 0/100% 100% no-repeat;
+    
+    .login-container {
+      .login-header {
+        margin-top: 1em;
+      }
+
+      padding: 1em;
+      margin: 1em;
+      background-color: var(--deep-blue-color);
+      border-radius: 5px;
+    }
+  }
+}

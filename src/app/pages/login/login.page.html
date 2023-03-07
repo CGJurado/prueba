@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{'app-login-toolbar-title' | translate | async}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="login-container responsive-container">
+    <div class="login-header">
+      <ion-grid [fixed]="true">
+        <ion-row class="ion-align-items-center ion-justify-content-center">
+          <img src="https://picsum.photos/80/80?random=1" alt="Logo" />
+        </ion-row>
+        <ion-row class="ion-align-items-center ion-justify-content-center">
+          <p>{{'app-login-header-title' | translate | async}}</p>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <app-auth-form (userAuthenticatedEvent)="onLogin($event)">
+      <ng-template let-formData>
+        <ion-grid [fixed]="true">
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="auto">
+              <ion-button fill="outline" type="submit"
+                [disabled]="!formData.authForm.valid && formData.formSubmited">{{'app-login-submitBtn' | translate | async}}</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ng-template>
+    </app-auth-form>
+  </div>
+</ion-content>

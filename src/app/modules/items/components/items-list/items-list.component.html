@@ -1,0 +1,6 @@
+<ion-list class="list-container responsive-container">
+  <app-item *ngFor="let item of items" [item]="item" ></app-item>
+</ion-list>
+<ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+  <ion-infinite-scroll-content></ion-infinite-scroll-content>
+</ion-infinite-scroll>

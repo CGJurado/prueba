@@ -1,0 +1,13 @@
+<ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="auto" class="ion-justify-content-start">
+        <img [src]="item.photo" alt="avatar" />
+      </ion-col>
+      <ion-col>
+        <ion-row><span class="item-id responsive-font">ID: {{ item.id }}</span></ion-row>
+        <ion-row><span class="item-text responsive-font">{{ item.text }}</span></ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-item>

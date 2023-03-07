@@ -1,0 +1,20 @@
+<form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+  <ion-item class="add-padding-end">
+    <ion-input type="email" formControlName="email" [placeholder]="'app-username-input-placeholder' | translate | async">
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+    </ion-input>
+    <ion-note *ngIf="formSubmited" slot="error">{{'app-username-input-error' | translate | async}}</ion-note>
+  </ion-item>
+  <ion-item class="add-padding-end">
+    <ion-input type="password" formControlName="password" [placeholder]="'app-password-input-placeholder' | translate | async" minlength="5">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+    </ion-input>
+    <ion-note *ngIf="formSubmited" slot="error">{{'app-password-input-error' | translate | async}}</ion-note>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label>{{'app-rememberMe-input-toggle' | translate | async}}</ion-label>
+    <ion-toggle formControlName="rememberMe" slot="end"></ion-toggle>
+  </ion-item>
+  <ng-template [ngTemplateOutlet]="templateRef"
+    [ngTemplateOutletContext]="{$implicit: {authForm, formSubmited}}"></ng-template>
+</form>
